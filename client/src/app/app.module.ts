@@ -11,6 +11,9 @@ import {DashboardComponent} from './components/dashboard/dashboard.component';
 import {WebsocketService} from './services/websocket.service';
 import {ToastModule} from 'primeng/toast';
 import {MessageService} from 'primeng/api';
+import {FormsModule} from '@angular/forms';
+import {ButtonModule} from 'primeng/button';
+import {InputTextModule} from 'primeng/inputtext';
 
 @NgModule({
   declarations: [
@@ -24,6 +27,9 @@ import {MessageService} from 'primeng/api';
     HttpClientModule,
     BrowserAnimationsModule,
     ToastModule,
+    FormsModule,
+    ButtonModule,
+    InputTextModule,
   ],
   providers: [
     WebsocketService,
