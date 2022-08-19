@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
+import java.util.Date;
 import java.util.UUID;
 
 @Configuration
@@ -17,7 +18,7 @@ public class MessageProducer {
 
     //@Scheduled(fixedRate = 3000)
     public void publishUpdates() {
-        Message m = new Message("patrick", UUID.randomUUID().toString());
+        Message m = new Message("patrick", UUID.randomUUID().toString(), new Date());
         System.out.println(m);
         simpMessagingTemplate.convertAndSend("/topic/messages", m);
     }
