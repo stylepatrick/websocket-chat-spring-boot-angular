@@ -4,6 +4,7 @@ Two or more clients (browser tabs) can communicate with each other via websocket
 Everything is secured by spring-security and spring-security-messaging.
 
 Example:
+
 User1 and User2 are logged in (subscribed to the /secured/topic/message topic).
 They can send messages to the endpoint /secured/app/chat, which forwards the messages to the topic the clients are connected to.
 
