@@ -4,7 +4,7 @@ import {Injectable} from '@angular/core';
 export class WebsocketService {
 
   public readonly url = 'http://localhost:8080/chat';
-  public readonly topicMessage = '/topic/messages';
-  public readonly topicChat = '/app/chat';
+  public readonly topicMessage = '/secured/topic/messages';
+  public readonly topicChat = '/secured/app/chat';
 
 }

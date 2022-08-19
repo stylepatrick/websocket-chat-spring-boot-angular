@@ -9,8 +9,8 @@ import org.springframework.stereotype.Controller;
 public class MessageApi {
 
     @MessageMapping("/chat")
-    @SendTo("/topic/messages")
-    public Message send(Message message) throws Exception {
+    @SendTo("/secured/topic/messages")
+    public Message send(Message message) {
         System.out.println(message);
         return message;
     }
